@@ -1,0 +1,10 @@
+C:\Users\pitig\Documents\C#\Xamarin\Tictac\Tictac\Tictac\bin\Debug\netstandard2.0\Tictac.deps.json
+C:\Users\pitig\Documents\C#\Xamarin\Tictac\Tictac\Tictac\bin\Debug\netstandard2.0\Tictac.dll
+C:\Users\pitig\Documents\C#\Xamarin\Tictac\Tictac\Tictac\bin\Debug\netstandard2.0\Tictac.pdb
+C:\Users\pitig\Documents\C#\Xamarin\Tictac\Tictac\Tictac\obj\Debug\netstandard2.0\Tictac.csproj.CoreCompileInputs.cache
+C:\Users\pitig\Documents\C#\Xamarin\Tictac\Tictac\Tictac\obj\Debug\netstandard2.0\Tictac.App.xaml.g.cs
+C:\Users\pitig\Documents\C#\Xamarin\Tictac\Tictac\Tictac\obj\Debug\netstandard2.0\Tictac.MainPage.xaml.g.cs
+C:\Users\pitig\Documents\C#\Xamarin\Tictac\Tictac\Tictac\obj\Debug\netstandard2.0\Tictac.AssemblyInfoInputs.cache
+C:\Users\pitig\Documents\C#\Xamarin\Tictac\Tictac\Tictac\obj\Debug\netstandard2.0\Tictac.AssemblyInfo.cs
+C:\Users\pitig\Documents\C#\Xamarin\Tictac\Tictac\Tictac\obj\Debug\netstandard2.0\Tictac.dll
+C:\Users\pitig\Documents\C#\Xamarin\Tictac\Tictac\Tictac\obj\Debug\netstandard2.0\Tictac.pdb

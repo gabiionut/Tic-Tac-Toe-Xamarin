@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Tictac"
+             x:Class="Tictac.MainPage"
+             BackgroundColor="#009688">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <OnPlatform.Platforms>
+                <On Platform="iOS" Value="0, 20, 0, 0"/>
+            </OnPlatform.Platforms>
+        </OnPlatform>
+    </ContentPage.Padding>
+
+    <RelativeLayout>
+        <BoxView BackgroundColor="#009688" 
+                 x:Name="Banner"
+                 RelativeLayout.HeightConstraint="{ConstraintExpression
+                    Type=RelativeToParent,
+                    Property=Height,
+                    Factor=0.15}"
+                 RelativeLayout.WidthConstraint="{ConstraintExpression
+                    Type=RelativeToParent,
+                    Property=Width,
+                    Factor=1}"
+                 RelativeLayout.YConstraint="{ConstraintExpression
+                    Type=RelativeToParent,
+                    Property=Height,
+                    Factor=0.85}"/>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression
+                        Type=RelativeToParent,
+                        Property=Width,
+                        Factor=1}"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression
+                        Type=RelativeToView,
+                        ElementName=Banner,
+                        Property=Height,
+                        Factor=1}"
+                     RelativeLayout.YConstraint="{ConstraintExpression
+                    Type=RelativeToParent,
+                    Property=Height,
+                    Factor=0.85}">
+
+            <Button BackgroundColor="#FFC107" Text="New Game" Clicked="New"/>
+
+        </StackLayout>
+
+        <Grid Padding="-5" RowSpacing="-3" ColumnSpacing="-3" BackgroundColor="Black"
+                RelativeLayout.YConstraint="{ConstraintExpression
+                    Type=RelativeToView,
+                    ElementName=Banner,
+                    Property=Height,
+                    Factor=1,
+                    Constant=-10}"
+              RelativeLayout.XConstraint="{ConstraintExpression
+                    Type=RelativeToView,
+                    ElementName=Banner,
+                    Property=Width,
+                    Factor=1,
+                    Constant=-330}"
+                RelativeLayout.HeightConstraint="{ConstraintExpression
+                    Type=RelativeToParent,
+                    Property=Height,
+                    Factor=0.6}"
+              RelativeLayout.WidthConstraint="{ConstraintExpression
+                    Type=RelativeToParent,
+                    Property=Width,
+                    Factor=0.85}">
+
+            <Button Grid.Row="0" Grid.Column="0" FontSize="50" x:Name="A1" Clicked="Button_OnClicked" BackgroundColor="#009688"/>
+            <Button Grid.Row="0" Grid.Column="1" FontSize="50" x:Name="A2" Clicked="Button_OnClicked" BackgroundColor="#009688"/>
+            <Button Grid.Row="0" Grid.Column="2" FontSize="50" x:Name="A3" Clicked="Button_OnClicked" BackgroundColor="#009688"/>
+            <Button Grid.Row="1" Grid.Column="0" FontSize="50" x:Name="B1" Clicked="Button_OnClicked" BackgroundColor="#009688"/>
+            <Button Grid.Row="1" Grid.Column="1" FontSize="50" x:Name="B2" Clicked="Button_OnClicked" BackgroundColor="#009688"/>
+            <Button Grid.Row="1" Grid.Column="2" FontSize="50" x:Name="B3" Clicked="Button_OnClicked" BackgroundColor="#009688"/>
+            <Button Grid.Row="2" Grid.Column="0" FontSize="50" x:Name="C1" Clicked="Button_OnClicked" BackgroundColor="#009688"/>
+            <Button Grid.Row="2" Grid.Column="1" FontSize="50" x:Name="C2" Clicked="Button_OnClicked" BackgroundColor="#009688"/>
+            <Button Grid.Row="2" Grid.Column="2" FontSize="50" x:Name="C3" Clicked="Button_OnClicked" BackgroundColor="#009688"/>
+
+        </Grid>
+    </RelativeLayout>
+</ContentPage>
